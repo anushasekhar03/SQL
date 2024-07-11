@@ -1,1 +1,18 @@
+Data can be defined as collection of facts, figures, statistics, measurements , texts, images,vedios etc..
+Data can be broadly calssified into 3 types:
+1.Structured Data
+->S.D refers to organize data, this type of data is easily searcheable in a Database and has a pre-defined data model
+EX:Table
+2.Semi-Structured Data
+->SSD is semi Organized meaning that some of it is well Organized whereas the other part is unoganized
+EX:Email
+3.Un-structured Data
+->USD is unorganized and hence it does not have any pre defined data model.
+EX:facebook,instagram-text,videos,images
+
+DATABASE
+->A database can be defined as an organized collection of similar data
+->It helps us to efficiency store, manage as well as retrive the data
+->In Organized database we can easily compare the data (or) analasys it to make decisions
+->Such a database where we can store the data in tabular format (in table) is known as a relational D.B
 
