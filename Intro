@@ -16,3 +16,9 @@ DATABASE
 ->In Organized database we can easily compare the data (or) analasys it to make decisions
 ->Such a database where we can store the data in tabular format (in table) is known as a relational D.B
 
+->A collection of data can be represented in multiple formats
+Ex:Relational DB, Document, Graph
+->Such a software which helps us to communicate with a DB and perform DB related operations is knowm as a RDB managemet system
+->Operations which ate supported by rdbms can include inserting data updating data ,deleting data as well as retrivind data
+->SQL stands for STRUCTURED QUERY LANGUAGE and it helps us to communicate with RDBMS.
+
