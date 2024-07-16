@@ -24,4 +24,4 @@ Ex:Relational DB, Document, Graph
 ->SQL stands for STRUCTURED QUERY LANGUAGE and it helps us to communicate with RDBMS. 
 ->DBMS:It is a software for creating and managing database.It enables users to create, protect, read,update and delete data
 in database.
-
+->Managing the data in tabular form is called RDBMS
