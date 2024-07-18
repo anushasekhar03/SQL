@@ -19,7 +19,7 @@ create table items
 EX-2:
 create database products;   --creates a databse named products
 use products;               --this command selects the productd for use.purpose of use-DBMS will manage  multiple db so we need to specity only one db  
-create table products(      -- creates table with roes n columns
+create table products(      -- creates table with roes n columns -each colums holds a specific types of data
 id INT PRIMARY KEY,         --id is int datatype and primary refers-no two ROWS can have the same primary key value
 name VARCHAR(50) NOT NULL,   -- name-it can store variable-length strings up to 50 characters long.
 PRICE DECIMAL(10,2),      --column can store upto 10 decimal digits including upto 2 digits after the decimal point
