@@ -1,0 +1,26 @@
+1.Create a database
+2.use database
+3.create table inside table
+4.for coloumns open bracket and enter details
+EX-1:
+
+create database market;
+use market;
+create table items
+(  name varchar(50),
+   id int unique ,
+   adress varchar(50)
+   );
+   insert into items values ( "veggies" , 1 ,"chickpet");
+   insert into items values ( "fruits" , 2 ,"electronic city");
+   insert into items values ( "chocs" , 3 ,"btm");
+   insert into items values ( "ice creams" , 14,"bommanahalli");
+
+EX-2:
+create database products;   --creates a databse named products
+use products;               --this command selects the productd for use.purpose of use-DBMS will manage  multiple db so we need to specity only one db  
+create table products(      -- creates table with roes n columns
+id INT PRIMARY KEY,         --id is int datatype and primary refers-no two ROWS can have the same primary key value
+name VARCHAR(50) NOT NULL,   -- name-it can store variable-length strings up to 50 characters long.
+PRICE DECIMAL(10,2),      --column can store upto 10 decimal digits including upto 2 digits after the decimal point
+DESCRIPTION TEXT,         --text data type is used for storing large amounts of text data.
