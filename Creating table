@@ -24,3 +24,7 @@ id INT PRIMARY KEY,         --id is int datatype and primary refers-no two ROWS 
 name VARCHAR(50) NOT NULL,   -- name-it can store variable-length strings up to 50 characters long.
 PRICE DECIMAL(10,2),      --column can store upto 10 decimal digits including upto 2 digits after the decimal point
 DESCRIPTION TEXT,         --text data type is used for storing large amounts of text data.
+
+->In table there is horizontal line is row/record /tuple
+->Verticle one is column
+-<one box is called a Cell.
