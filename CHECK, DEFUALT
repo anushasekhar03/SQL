@@ -1,0 +1,21 @@
+CHECK-It guarantees that all values in a column satisfy particular requirements.
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    Name VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    Age INT CHECK (Age >= 18)
+);
+This setup ensures that only individuals aged 18 and above can be added to your database, maintaining compliance with employment regulations.
+UNIQUE-The DEFAULT constraint facilitates data entry by automatically assigning a standard value to a column when no other value is specified.
+EX: For instance, you might presume that any unspecified marital status indicates the employee is unmarried.
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    Name VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    Age INT CHECK (Age >= 18),
+    MaritalStatus VARCHAR(10) DEFAULT 'Single'
+);
+INSERT INTO Employees (EmployeeID, Name, Email, Age) VALUES (101, 'Omkar', 'Omkar@example.com', 25);
+INSERT INTO Employees (EmployeeID, Name, Email, Age) VALUES (102, 'Prahllad', 'Prahllad@example.com', 17);
+SELECT Name, MaritalStatus FROM Employees WHERE EmployeeID = 101;
+->The output indicates that the DEFAULT constraint has successfully set Omkar's marital status as "Single."
