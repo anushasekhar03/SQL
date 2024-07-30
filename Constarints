@@ -32,6 +32,11 @@ email VARCHAR (100) UNIQUE NOT NULL
 );
 
 
-
+UNIQUE-ensures that all values in a column are distinct.
+NOT NULL - requires that a column cannot have a NULL value, crucial for important data.
+PRIMARY KEY - uniquely identifies each row in a table.
+CHECK - sets specific rules for the values that can appear in a column.
+DEFAULT - provides a fallback value for a column when no other data is entered.
+FOREIGN KEY - connects tables and ensures changes in one table are accurately reflected in another.
 
 
