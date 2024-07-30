@@ -26,5 +26,5 @@ PRICE DECIMAL(10,2),      --column can store upto 10 decimal digits including up
 DESCRIPTION TEXT,         --text data type is used for storing large amounts of text data.
 
 ->In table there is horizontal line is row/record /tuple
-->Verticle one is column
+->Verticle one is column /field/attribute.
 -<one box is called a Cell.
