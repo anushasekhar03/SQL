@@ -1,0 +1,43 @@
+1.Creating database College
+Q-create database College;
+2.Use database;
+3. Create table students
+     (
+     stud_id INT,
+     stud_name VARCHAR(50),
+     birthdate DATE,
+     age INT
+     );
+4.Insert values into it
+insert into students values (101,'anusha','1998-08-31',24);
+insert into students values (102,'lokesh','1997-08-12',25);
+insert into students values (103,'kavya','1999-08-31',26);
+5.retriving all data from table:
+Q-SELECT * FROM students;
++---------+-----------+------------+------+
+| stud_id | stud_name | birthdate  | age  |
++---------+-----------+------------+------+
+|     101 | anusha    | 1998-08-31 |   24 |
+|     102 | lokesh    | 1997-08-12 |   25 |
+|     103 | kavya     | 1999-08-31 |   26 |
++---------+-----------+------------+------+
+
+6.select name and id from table
+Q-SELECT student_id, student_name FROM students;
++-----------+---------+
+| stud_name | stud_id |
++-----------+---------+
+| anusha    |     101 |
+| lokesh    |     102 |
+| kavya     |     103 |
++-----------+---------+
+
+7.select AGE greater than 24
+Q-SELECT * FROM students WHERE age > 24;
++---------+-----------+------------+------+
+| stud_id | stud_name | birthdate  | age  |
++---------+-----------+------------+------+
+|     102 | lokesh    | 1997-08-12 |   25 |
++---------+-----------+------------+------+
+
+
