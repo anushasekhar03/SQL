@@ -1,2 +1,8 @@
--> Managing database is of two types, 1. relational db 2.Non-relational Db
+->Managing: storing permanently ,processing and retreiving the data efficiently.
+-> Managing a database involves more than just storing information, it includes maintaining, updating and retreving data efficiently.
+FORMS OF DATABASE MANAGEMENT
+-> Managing database is of two types, 1. relational-TABLES db 2.Non-relational Db- KEY-VALUE PAIR
 ->the database is in the form of tables is relational and where it is not not tables is called non-relational
+RDBMS-It is a program  used to create ,update, and manage relational  EX: mysql,oracle,sql server etc..
+DBMS-DATABASE MANAGEMENT SYSTEM-A software which is used to store, retrive and run queries on data, stores data in form of files
+
