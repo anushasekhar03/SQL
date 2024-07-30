@@ -1,0 +1,27 @@
+FOREIGN KEY constraints link two tables, blocking actions that could disrupt data relationships.
+Imagine a company's system with two main types of data: employees and the departments they work in. Typically, this information is stored in two separate tables.
+
+CREATE TABLE Departments 
+( 
+DepartmentID INT PRIMARY KEY, 
+DepartmentName VARCHAR(50), 
+Location VARCHAR(50) 
+);
+
+CREATE TABLE Employees 
+( 
+EmployeeID INT PRIMARY KEY, 
+Name VARCHAR(50), 
+Email VARCHAR(100) UNIQUE, 
+DepartmentID INT, 
+FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID) 
+);
+here,The DepartmentID in the Employees table is a foreign key that references the DepartmentID in the Departments table.
+Foreign key constraints ensure that any value entered in the foreign key column matches an existing value in the referenced primary key column. 
+This allows for valid scenarios, such as adding an employee to an existing department, which is a straightforward and accepted operation by the database.
+-->Adding an employee to an existing department is straightforward and accepted by the database.
+INSERT INTO Employees VALUES (1, 'John Doe', 'john.doe@example.com', 1);
+-- Assumes Department 1 exists
+-->Attempting to assign an employee to a department that is not present in the Departments table will be prevented.
+INSERT INTO Employees VALUES(2, 'Jane Smith', 'jane.smith@example.com', 5); 
+-- Department 5 does not exist
