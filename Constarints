@@ -1,0 +1,37 @@
+SQl constarints are used to specify rules for the data in table and are used to limit the type of data tht can go into table this ensures accuracy and reliabitity of data in
+table.
+ Commonly used Constarits are:1
+
+1.UNIQUE-This ensures all values in coloumn are diff from each other, promoting iniqueness
+CREATE TABLE Employee 
+(
+ EmployeeID INT UNIQUE,
+  Name VARCHAR(100) 
+);
+2.NOT NULL - It prevents coloumn from having a NULL vlue,ensuring that field lways contains data
+EX: emp_name , email
+CREATE TABLE Employee 
+(
+EmployeeID INT NOT NULL,
+Name VARCHAR(100) NOT NULL
+);
+
+3.PRIMARY KEY- Combines UNIQUE and NOT NULL , it uniquely identifies each row in a table 
+and must contain a unique value that cannot be null.
+CREATE TABLE Employee
+(
+EmployeeID INT PRIMARY KEY,
+Name VARCHAR(100) NOT NULL 
+);
+
+EX: practical Application of SQL constarints
+Create table Employees(
+EmpID INT PRIMARYKEY,
+NAME VARCHAR(50) not null,
+email VARCHAR (100) UNIQUE NOT NULL
+);
+
+
+
+
+
