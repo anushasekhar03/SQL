@@ -1,0 +1,65 @@
+keyword and logical opertors are used us to filter, combine, and manipulate data in ways that symbolic operators cannot.
+mysql> SElect * from Drives;
++----------+--------------------+---------+------------+
+| drive_id | desigantion        | package | drive_date |
++----------+--------------------+---------+------------+
+|      212 | Software developer |  500000 | 2023-11-10 |
+|      215 | Frontend developer |  600000 | 2023-11-15 |
+|      216 | Backend developer  |  700000 | 2023-11-20 |
+|      220 | Backend developer  |  580000 | 2023-12-20 |
++----------+--------------------+---------+------------+
+
+1.Retrieve all records where the job title is either 'Software Developer' or 'Backend Developer'.
+SELECT * 
+FROM drives 
+WHERE designation = 'Software Developer' OR designation = 'Backend Developer';
++----------+--------------------+---------+------------+
+| drive_id | desigantion        | package | drive_date |
++----------+--------------------+---------+------------+
+|      212 | Software developer |  500000 | 2023-11-10 |
+|      216 | Backend developer  |  700000 | 2023-11-20 |
+|      220 | Backend developer  |  580000 | 2023-12-20 |
++----------+--------------------+---------+------------+
+
+2.Retrieve all records where the drive date is greater than '2023-12-12' and the package value is greater than 450000.
+SELECT * 
+FROM drives 
+WHERE drive_date > '2023-12-12' AND package > 450000;
++----------+-------------------+---------+------------+
+| drive_id | desigantion       | package | drive_date |
++----------+-------------------+---------+------------+
+|      220 | Backend developer |  580000 | 2023-12-20 |
++----------+-------------------+---------+------------+
+
+3.Retrieve details where the package exceeds 440000 and the designation is either 'Front End Developer' or 'Data Administrator'.
+SELECT * 
+FROM drives 
+WHERE package > 440000 AND (designation = 'Front End Developer' OR designation = 'Data Administrator');
++----------+--------------------+---------+------------+
+| drive_id | desigantion        | package | drive_date |
++----------+--------------------+---------+------------+
+|      215 | Frontend developer |  600000 | 2023-11-15 |
++----------+--------------------+---------+------------+
+
+4.Retrieve details where the package size is less than or equal to 500,000 and the drive date is on or before '2023-11-22'.
+SELECT * 
+FROM drives 
+WHERE package <= 500000 AND drive_date <= '2023-11-22';
++----------+--------------------+---------+------------+
+| drive_id | desigantion        | package | drive_date |
++----------+--------------------+---------+------------+
+|      212 | Software developer |  500000 | 2023-11-10 |
++----------+--------------------+---------+------------+
+
+5.Retrieve details where the package exceeds 630000 and the designation is either 'Front End Developer' or 'Back End Developer'.
+SELECT * 
+FROM drives 
+WHERE (package + 30000) > 600000 AND (designation = 'Front End Developer' OR designation = 'Back End Developer');
++----------+--------------------+---------+------------+
+| drive_id | desigantion        | package | drive_date |
++----------+--------------------+---------+------------+
+|      215 | Frontend developer |  600000 | 2023-11-15 |
+|      216 | Backend developer  |  700000 | 2023-11-20 |
+|      220 | Backend developer  |  580000 | 2023-12-20 |
++----------+--------------------+---------+------------+
+
