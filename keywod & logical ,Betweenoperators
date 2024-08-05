@@ -63,3 +63,40 @@ WHERE (package + 30000) > 600000 AND (designation = 'Front End Developer' OR des
 |      220 | Backend developer  |  580000 | 2023-12-20 |
 +----------+--------------------+---------+------------+
 
+ 
+6.Retrieve all details from the table where the package is between 600,000 and 750,000.SELECT *
+    -> FROM drives
+    -> WHERE package BETWEEN 600000 AND 750000;
++----------+--------------------+-----------+------------+
+| drive_id | designation        | package   | drive_date |
++----------+--------------------+-----------+------------+
+|      215 | Software Developer | 600000.00 | 2023-11-15 |
+|      220 | Backend Developer  | 720000.00 | 2023-12-15 |
++----------+--------------------+-----------+------------+
+
+7.Retrieve all details of drives scheduled between January 1, 2023 and December 31, 2023.
+mysql> SELECT *
+    -> FROM drives
+    -> WHERE drive_date BETWEEN '2023-01-01' AND '2023-12-31';
++----------+--------------------+-----------+------------+
+| drive_id | designation        | package   | drive_date |
++----------+--------------------+-----------+------------+
+|      212 | Software Developer | 500000.00 | 2023-11-10 |
+|      215 | Software Developer | 600000.00 | 2023-11-15 |
+|      216 | Backend Developer  | 450000.00 | 2023-11-20 |
+|      220 | Backend Developer  | 720000.00 | 2023-12-15 |
++----------+--------------------+-----------+------------+
+8.Retrieve details where the package value is between 6,50,000 and 7,50,000, in the correct range order.
+SELECT *
+    -> FROM drives
+    -> WHERE package BETWEEN 600000 AND 750000;
++----------+--------------------+-----------+------------+
+| drive_id | designation        | package   | drive_date |
++----------+--------------------+-----------+------------+
+|      215 | Software Developer | 600000.00 | 2023-11-15 |
+|      220 | Backend Developer  | 720000.00 | 2023-12-15 |
++----------+--------------------+-----------+------------+
+Note: In this blog, we examined the utilization of the BETWEEN AND operator in SQL for effective data retrieval. 
+This operator is essential for filtering data based on a range of values, whether they are numbers or dates. By practicing
+these queries, you can improve your ability to write accurate and efficient SQL queries.
+
