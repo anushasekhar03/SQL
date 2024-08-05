@@ -1,0 +1,25 @@
+This operator allows us to efficiently retrieve data when we need to check if a value matches any value in a specified list.
+1.Retrieve the details of all drives that have the designations 'Software Developer', 'Data Administration', or 
+'Front-End Developer'.
+ SELECT *
+    -> FROM drives
+    -> WHERE designation IN ('Software Developer', 'Data Administration', 'Front-End Developer');
++----------+--------------------+-----------+------------+
+| drive_id | designation        | package   | drive_date |
++----------+--------------------+-----------+------------+
+|      212 | Software Developer | 500000.00 | 2023-11-10 |
+|      215 | Software Developer | 600000.00 | 2023-11-15 |
+|      223 | software developer | 178930.00 | 2024-09-23 |
++----------+--------------------+-----------+------------+
+
+2.Retrieve drive details with drive dates '2024-01-02', '2023-09-12', or '2023-10-23'.
+
+mysql> SELECT *
+    -> FROM drives
+    -> WHERE drive_date IN ('2024-01-02', '2024-09-23', '2023-06-23');
++----------+--------------------+-----------+------------+
+| drive_id | designation        | package   | drive_date |
++----------+--------------------+-----------+------------+
+|      223 | software developer | 178930.00 | 2024-09-23 |
+|      225 | data analyst       | 799990.00 | 2023-06-23 |
++----------+--------------------+-----------+------------+
