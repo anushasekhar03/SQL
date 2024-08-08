@@ -1,0 +1,11 @@
+The DISTINCT keyword is employed to retrieve solely unique values from a specified column.
+SELECT DISTINCT designation FROM drives;
+SELECT UNIQUE designation FROM drives;
+designation
+Software Developer
+Frontend Developer
+Data Administrator
+Backend Developer
+
+->The DISTINCT keyword is crucial for retrieving unique values from a database column. It is more versatile as it works in both MySQL and Oracle, whereas UNIQUE is 
+specific to Oracle for retrieval purposes. We provided an example query to demonstrate the usage of DISTINCT in finding distinct designations from a table.
