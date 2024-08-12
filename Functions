@@ -1,0 +1,62 @@
+SQL functions are predefined procedures created to carry out particular operations.
+TYPES-SQL functions are divided into two main categories: Single Row Functions and Multiple Row Functions.
+1. SINGLE ROW FUNCTIONS
+Single row functions operate on individual rows of a table and produce a single output for each row.
+classified into four types:
+a)String Functions: These functions operate on string values and enable manipulation and transformation of text.
+b)Number Functions: These functions perform operations on numeric values.
+c)Date and Time Functions: These functions handle date and time values, allowing for calculations and formatting.
+d)Flow Control Functions: These functions provide control over the flow of SQL statements.
+String Functions:
+Upper(): Converts a string to uppercase.
+Lower(): Converts a string to lowercase.
+Length(): Returns the length of a string.
+Reverse(): Reverses a string.
+Concat(): Concatenates two or more strings.
+Replace(): Replaces occurrences of a specified string with another string.
+Substr(): Extracts a substring from a string.
+Instr(): Returns the position of the first occurrence of a substring in a string.
+Trim(): Removes leading and trailing spaces from a string.
+Lpad(): Pads the left side of a string with a specified set of characters.
+Rpad(): Pads the right side of a string with a specified set of characters.
+Left(): Extracts a specified number of characters from the left side of a string.
+Right(): Extracts a specified number of characters from the right side of a string.
+Ascii(): Returns the ASCII value of the leftmost character of a string.
+
+learn
+
+completed
+
+Understanding Functions in SQL
+
+In this session, we will explore a very important concept in SQL: functions. Functions in SQL are essential for efficient data retrieval and manipulation. Our journey so far has concentrated on operators in SQL, but now we shift our focus to functions, which allow us to perform more complex operations on our data.
+Understanding SQL Functions :
+Functions in SQL are built-in routines designed to perform specific tasks. These tasks can range from simple arithmetic operations to more complex string manipulations and date calculations. SQL functions help us achieve efficient data retrieval by allowing us to perform various operations while querying the database.
+Types of SQL Functions :
+SQL functions are broadly classified into two categories:
+Single Row Functions
+
+Multiple Row Functions
+
+Single Row Functions :
+Single row functions operate on each row of a table and return a single result for each row. They are further classified into four types:
+String Functions : These functions operate on string values and allow for manipulation and transformation of text.
+
+Number Functions : These functions perform operations on numeric values.
+
+Date and Time Functions : These functions handle date and time values, allowing for calculations and formatting.
+
+Flow Control Functions : These functions provide control over the flow of SQL statements.
+
+Detailed List of Single Row Functions :
+Here is a comprehensive list of single row functions available in MySQL:
+String Functions :
+Upper() : Converts a string to uppercase.
+Lower() : Converts a string to lowercase.
+Length() : Returns the length of a string.
+Reverse() : Reverses a string.
+Concat() : Concatenates two or more strings.
+Replace() : Replaces occurrences of a specified string with another string.
+Substr() : Extracts a substring from a string
+Instr() : Returns the position of the first occurrence of a substring in a string.
+Trim() : Removes leading and trailing spaces from
